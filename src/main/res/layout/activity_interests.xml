@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3e7ea">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:text="Back"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/back_btn"
+            android:textColor="#181818" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="Next"
+            android:id="@+id/next_btn"
+            android:onClick="nextScreen"
+            android:textColor="#181818" />
+    </LinearLayout>
+
+</LinearLayout>
